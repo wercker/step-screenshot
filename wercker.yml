@@ -4,6 +4,3 @@ build:
       - install-packages:
           packages: npm
       - npm-install
-      - screenshot "file:///Users/mwhooker/dev/step-screenshot":
-          url: https://www.google.com
-          filename: google.png
