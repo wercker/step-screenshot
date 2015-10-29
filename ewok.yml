@@ -1,0 +1,6 @@
+box: cmfatih/phantomjs
+build:
+  steps:
+      - screenshot:
+          url: https://www.google.com
+          filename: google.png
