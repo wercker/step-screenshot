@@ -1,6 +1,4 @@
-box: wercker/default
+box: wercker/nodejs
 build:
   steps:
-      - install-packages:
-          packages: npm
       - npm-install

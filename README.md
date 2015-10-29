@@ -14,7 +14,7 @@ Take a screenshot of any web page.
 box: cmfatih/phantomjs
 build:
   steps:
-      - screenshot "file:///Users/mwhooker/dev/step-screenshot":
+      - screenshot:
           url: https://www.google.com
           filename: google.png
 ```
