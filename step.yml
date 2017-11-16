@@ -1,0 +1,18 @@
+name: screenshot
+version: 1.0.0
+summary: Takes a screenshot of the given URL
+tags:
+  - screenshot
+properties:
+- name: url
+  type: string
+  required: true
+- name: filename
+  type: string
+  required: true
+- name: viewport_width
+  type: string
+  required: false
+- name: viewport_height
+  type: string
+  required: false
