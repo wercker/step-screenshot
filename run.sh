@@ -1,4 +1,4 @@
-phantomjs --ignore-ssl-errors=true screenshot.js $WERCKER_SCREENSHOT_URL \
+phantomjs --ignore-ssl-errors=true $WERCKER_ROOT/screenshot.js $WERCKER_SCREENSHOT_URL \
     ${WERCKER_REPORT_ARTIFACTS_DIR}/${WERCKER_SCREENSHOT_FILENAME} \
     $WERCKER_SCREENSHOT_VIEWPORT_WIDTH \
     $WERCKER_SCREENSHOT_VIEWPORT_HEIGHT
