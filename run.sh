@@ -4,16 +4,16 @@ then
 else
     FILE_PARENT_PATH=${WERCKER_SCREENSHOT_FILE_PATH%/*}
     FILE_NAME=${WERCKER_SCREENSHOT_FILE_PATH##*/}
-    IS_FILE_PATH_ABSOLUTE=false
+    IS_FILE_PATH_ABSOLUTE="false"
     if [[ $WERCKER_SCREENSHOT_FILE_PATH == /* ]]
     then
-        IS_FILE_PATH_ABSOLUTE=true
+        IS_FILE_PATH_ABSOLUTE="true"
     fi
     if [ "${FILE_PARENT_PATH}" != "${FILE_NAME}" ]
     then
         if [ -z "${WERCKER_SCREENSHOT_CREATE_FILE_IN_ARTIFACTS}" ] || [ "false" == "${WERCKER_SCREENSHOT_CREATE_FILE_IN_ARTIFACTS}" ]
         then
-            if [ ! $IS_FILE_PATH_ABSOLUTE ]
+            if [ "false" == $IS_FILE_PATH_ABSOLUTE ]
             then
                 FILE_PARENT_PATH=${WERCKER_SOURCE_DIR}/${FILE_PARENT_PATH}
             fi
