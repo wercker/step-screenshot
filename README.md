@@ -28,8 +28,7 @@ in the image below:
 
 ![Image showing the download artifact button](images/wercker_screen.png)
 
-The screenshot image can also be accessed from any subsequent steps using the
-environment variable WERCKER_SCREENSHOT_TARGET_FILE.
+**Changes in 1.1.1 release**
 
 Location of generated screenshot is decided as follows:
 * file_path: Contains File name only, create_file_in_artifacts: false - Creates screenshot at top level in the source directory
@@ -38,3 +37,5 @@ Location of generated screenshot is decided as follows:
 * file_path: Contains relative path of file, create_file_in_artifacts: false - Creates screenshot at an relative path to source directory
 * file_path: Contains relative path of file, create_file_in_artifacts: true - Creates screenshot at an relative path to the artifacts directory
 * file_path: Contains absolute path of file, create_file_in_artifacts: true - Creates screenshot at an relative path to the artifacts directory (Leading forward / in the path is ignored)
+
+For a working example, please see https://github.com/lake-of-dreams/screenshot-sample.
