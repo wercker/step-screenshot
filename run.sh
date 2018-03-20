@@ -6,7 +6,7 @@ else
     FILE_NAME=${WERCKER_SCREENSHOT_FILE_PATH##*/}
     IS_FILE_PATH_ABSOLUTE=false
     if [[ $WERCKER_SCREENSHOT_FILE_PATH == /* ]]; then
-        IS_FILE_PATH_ABSOLUTE = true
+        IS_FILE_PATH_ABSOLUTE=true
     fi
     if [ "${FILE_PARENT_PATH}" != "${FILE_NAME}" ]
     then
