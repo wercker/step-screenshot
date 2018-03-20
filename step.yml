@@ -1,5 +1,5 @@
 name: screenshot
-version: 1.1.0
+version: 1.1.1
 summary: Takes a screenshot of the given URL
 tags:
   - screenshot
@@ -9,10 +9,13 @@ properties:
   required: true
 - name: filename
   type: string
-  required: true
+  required: true  
 - name: viewport_width
   type: string
   required: false
 - name: viewport_height
   type: string
   required: false
+- name: create_file_in_artifacts
+  type: boolean
+  required: false    
