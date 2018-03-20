@@ -7,12 +7,15 @@ properties:
 - name: url
   type: string
   required: true
-- name: filename
+- name: file_path
   type: string
   required: true
+- name: create_file_in_artifacts
+  type: boolean
+  required: false  
 - name: viewport_width
   type: string
   required: false
 - name: viewport_height
   type: string
-  required: false
+  required: false  
