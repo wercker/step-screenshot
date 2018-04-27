@@ -39,3 +39,7 @@ Location of generated screenshot is decided as follows:
 * filename: Contains absolute path of file, create_file_in_artifacts: true - Creates screenshot at an relative path to the artifacts directory (Leading forward / in the path is ignored)
 
 For a working example, please see https://github.com/lake-of-dreams/screenshot-sample.
+
+## Contributing to this repository 
+
+Oracle welcomes contributions to this repository from anyone.  Please see [CONTRIBUTING](CONTRIBUTING.md) for more information. 
